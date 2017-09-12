@@ -18,7 +18,7 @@
     "webpack-dev-server": "NODE_ENV=development webpack-dev-server --config webpack/config.js --progress --colors --cache --inline --hot --host buildkite.dev --port 4890",
     "static-server": "node_modules/.bin/http-server -p 4890 -a buildkite.dev ./dist",
     "relay": "relay-compiler --schema app/graph/schema.json --src app",
-    "percy": "react-percy --config webpack/config.js"
+    "percy": "NODE_ENV=production react-percy --config webpack/config.js"
   },
   "devDependencies": {
     "@percy-io/react-percy": "^0.2.5",
@@ -117,6 +117,11 @@
     ],
     "coveragePathIgnorePatterns": [
       "/node_modules/"
+    ]
+  },
+  "percy": {
+    "includeFiles": [
+      "./app/css/main.css"
     ]
   }
 }
