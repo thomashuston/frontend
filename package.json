@@ -17,9 +17,11 @@
     "bundle-analyze": "webpack --config webpack/config.js --profile --json > bundle-analysis/stats.json && webpack-bundle-analyzer bundle-analysis/stats.json dist --no-open --mode static -r bundle-analysis/bundle-analyzer-report.html",
     "webpack-dev-server": "NODE_ENV=development webpack-dev-server --config webpack/config.js --progress --colors --cache --inline --hot --host buildkite.dev --port 4890",
     "static-server": "node_modules/.bin/http-server -p 4890 -a buildkite.dev ./dist",
-    "relay": "relay-compiler --schema app/graph/schema.json --src app"
+    "relay": "relay-compiler --schema app/graph/schema.json --src app",
+    "percy": "react-percy --config webpack/config.js"
   },
   "devDependencies": {
+    "@percy-io/react-percy": "^0.2.5",
     "assets-webpack-plugin": "^3.4.0",
     "babel-core": "^6.24.0",
     "babel-eslint": "^7.1.0",
@@ -38,6 +40,7 @@
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-react-percy": "^0.1.3",
     "exports-loader": "^0.6.3",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
