@@ -2,16 +2,16 @@
 # yarn lockfile v1
 
 
-"@percy-io/percy-snapshot-render-react@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@percy-io/percy-snapshot-render-react/-/percy-snapshot-render-react-0.2.3.tgz#f243434ad16d07801a9408c06dce1804792dd35c"
+"@percy-io/percy-snapshot-render-react@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@percy-io/percy-snapshot-render-react/-/percy-snapshot-render-react-0.2.4.tgz#b5791d204529b7c1b36b8d3fac943a6eab78017c"
   dependencies:
     babel-runtime "^6.26.0"
     redbox-react "^1.5.0"
 
-"@percy-io/react-percy-api-client@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@percy-io/react-percy-api-client/-/react-percy-api-client-0.2.3.tgz#9c7837dfa029e7ae5de06a5e65461baf5c3ba7dc"
+"@percy-io/react-percy-api-client@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@percy-io/react-percy-api-client/-/react-percy-api-client-0.2.5.tgz#c98974d8c1bc53e2ae38c1549b0ec967fdde628f"
   dependencies:
     babel-runtime "^6.26.0"
     debug "^2.6.3"
@@ -20,34 +20,36 @@
     percy-client "^2.1.0"
     slugify "^1.1.0"
 
-"@percy-io/react-percy-ci@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@percy-io/react-percy-ci/-/react-percy-ci-0.2.5.tgz#3871f9131da81bf3d8ec4bb39bf9c0eeaa3a5bab"
+"@percy-io/react-percy-ci@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@percy-io/react-percy-ci/-/react-percy-ci-0.2.7.tgz#1a4523e76e0338abe6e16ced1c66e9208f7bb157"
   dependencies:
-    "@percy-io/percy-snapshot-render-react" "^0.2.3"
-    "@percy-io/react-percy-api-client" "^0.2.3"
-    "@percy-io/react-percy-test-framework" "^0.2.3"
-    "@percy-io/react-percy-webpack" "^0.2.5"
+    "@percy-io/percy-snapshot-render-react" "^0.2.4"
+    "@percy-io/react-percy-api-client" "^0.2.5"
+    "@percy-io/react-percy-test-framework" "^0.2.5"
+    "@percy-io/react-percy-webpack" "^0.2.7"
     babel-runtime "^6.26.0"
     chalk "^2.0.1"
     debug "^2.6.3"
     jsdom "^9.12.0"
 
-"@percy-io/react-percy-config@^0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@percy-io/react-percy-config/-/react-percy-config-0.2.4.tgz#5c392d0268d2000927a2b6088b1bcfab860b92c1"
+"@percy-io/react-percy-config@^0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@percy-io/react-percy-config/-/react-percy-config-0.2.6.tgz#c925c329684e700f6bc520e704d973d5028eec44"
 
-"@percy-io/react-percy-test-framework@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@percy-io/react-percy-test-framework/-/react-percy-test-framework-0.2.3.tgz#f9ee0694d2a9415552ccf982a8a987af0326db29"
+"@percy-io/react-percy-test-framework@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@percy-io/react-percy-test-framework/-/react-percy-test-framework-0.2.5.tgz#63617eaa7a68a41fcbf197fb9924ecca36206187"
   dependencies:
     babel-runtime "^6.26.0"
+    debug "^2.6.3"
     promise-each "^2.2.0"
 
-"@percy-io/react-percy-webpack@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@percy-io/react-percy-webpack/-/react-percy-webpack-0.2.5.tgz#7ae2a2b9266eb215dbe98667626b364a208fc184"
+"@percy-io/react-percy-webpack@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@percy-io/react-percy-webpack/-/react-percy-webpack-0.2.7.tgz#8d1146bc9e1225457ff71296301efb020791ce41"
   dependencies:
+    babel-plugin-react-require "^3.0.0"
     babel-runtime "^6.26.0"
     chalk "^2.0.1"
     glob "^7.1.2"
@@ -56,13 +58,13 @@
     tmp "^0.0.33"
     webpack-merge "^3.0.0"
 
-"@percy-io/react-percy@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@percy-io/react-percy/-/react-percy-0.2.5.tgz#1932ae464f98b3cc67f7eda34a1c5b100219e6ee"
+"@percy-io/react-percy@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@percy-io/react-percy/-/react-percy-0.2.7.tgz#959f819fd2efea3c10be1e91fbd4a620ba287885"
   dependencies:
-    "@percy-io/react-percy-ci" "^0.2.5"
-    "@percy-io/react-percy-config" "^0.2.4"
-    "@percy-io/react-percy-webpack" "^0.2.5"
+    "@percy-io/react-percy-ci" "^0.2.7"
+    "@percy-io/react-percy-config" "^0.2.6"
+    "@percy-io/react-percy-webpack" "^0.2.7"
     babel-runtime "^6.26.0"
     chalk "^2.0.1"
     yargs "^7.0.2"
@@ -619,6 +621,10 @@ babel-plugin-jest-hoist@^20.0.3:
 babel-plugin-react-pure-components@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-react-pure-components/-/babel-plugin-react-pure-components-2.2.2.tgz#693afcf1992e8a028b8c46b53d67d34dd2bb27c4"
+
+babel-plugin-react-require@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-require/-/babel-plugin-react-require-3.0.0.tgz#2e4e7b4496b93a654a1c80042276de4e4eeb20e3"
 
 babel-plugin-react-transform@^2.0.2:
   version "2.0.2"
